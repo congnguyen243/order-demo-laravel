@@ -21,7 +21,6 @@
     <script src="//cdn.ckeditor.com/4.16.1/basic/ckeditor.js"></script>    
     <script src="//cdn.ckeditor.com/4.16.1/basic/adapters/jquery.js"></script>
     <script type="text/javascript" src="/modules/master/js/z003.js"></script>
-    <!-- <script type="text/javascript" src="/modules/master/js/z003-edit.js"></script> -->
 @endsection
 @section('content')
 <div id="content-wrapper">

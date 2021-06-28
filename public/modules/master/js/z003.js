@@ -159,8 +159,7 @@
                             $("#noti_err").empty();
                             var er =  res.responseJSON.errors;
                             for (const property in er) {
-                                $("#noti_err").append(`
-                                <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="true"  data-delay="0" style="">
+                                $("#noti_err").append(`<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="true"  data-delay="0" style="">
                                         <div class="toast-header">
                                             <strong class="mr-auto">Error</strong>
                                             <small><?php echo " " . date("h:i:sa"); ?></small>
@@ -270,8 +269,7 @@
                             $("#update_noti_err").empty();
                             var er =  res.responseJSON.errors;
                             for (const property in er) {
-                                $("#update_noti_err").append(`
-                                <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="true"  data-delay="0" style="">
+                                $("#update_noti_err").append(`<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="true"  data-delay="0" style="">
                                     <div class="toast-header">
                                         <strong class="mr-auto">Error</strong>
                                         <small><?php echo " " . date("h:i:sa"); ?></small>
@@ -324,8 +322,6 @@
     $(document).ready(function () {
         var homeObj = new homeCls();
         homeObj.run();
-        // initEvents();
-        // On resize
         $(window).resize(function () {
           homeObj.resize();
         });
